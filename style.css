@@ -1,0 +1,42 @@
+html { 
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.leftMenu {
+    border: 1px rgb(194, 248, 0) solid;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33%;
+}
+
+[class*=icon] {
+    border: 1px rgb(255, 0, 0) solid;
+}
+
+.centerPosts{
+    border: 1px rgb(255, 2, 179) solid;
+    display: flex;
+    flex: 0 0 33%;
+}
+
+.rightBar {
+    border: 1px rgb(48, 0, 223) solid;
+    display: flex;
+    flex: 0 0 33%;
+}
+
+
+/*  flex-flow: flex-direction flex-wrap;
+        -direction -wrap 
+    flex: flex-grow flex-shrink flex-basis 
+    	-grow, -shrink: la velocità con cui cambiano larghezza 
+        -basis: gestione del width property AL POSTO DI WIDTH SEMPRE 
+*/
